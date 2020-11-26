@@ -10,12 +10,12 @@ namespace Domain
     /// </summary>
     public class Prospect
     {
-        public int Id { get; set; }
-        public string LastName { get; set; }
-        public string FirstName { get; set; }
-        public string Email { get; set; }
-        public DateTime LastContact { get; set; }
-        public string Notes { get; set; }
+        public virtual int Id { get; set; }
+        public virtual string LastName { get; set; }
+        public virtual string FirstName { get; set; }
+        public virtual string Email { get; set; }
+        public virtual DateTime LastContact { get; set; }
+        public virtual string Notes { get; set; }
 
         public Prospect(string lastName, string firstName, string email, DateTime lastContact, string notes)
             : this(lastName, firstName, email, lastContact)

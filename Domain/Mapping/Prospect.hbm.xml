@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2=">
+                   assembly="Domain"
+                   namespace="Domain"
+<class name ="Prospect" table="prospect">
+  
+  <!--Mapping des propriétés de la classe -->
+  <id name="Id" column="prosp_id" type="int">
+    <generator class="native"></generator>
+  </id>
+  
+  <property name="LastName" column="prosp_last_name" not-null="true"> </property>
+
+  <property name="FirstName" column="prosp_first_name" not-null="true"> </property>
+
+  <property name="Email" column="prosp_mail" not-null="true"> </property>
+
+  <property name="LastContact" column="prosp_last_contact" not-null="true"> </property>
+
+  <property name="Notes" column="prosp_notes" not-null="true"> </property>
+
+  <!--Mapping des associations de la classe -->
+  
+</class>
+
+</hibernate-mapping>
